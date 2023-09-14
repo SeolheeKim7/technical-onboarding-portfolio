@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/desk.png";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Shopping mall site with Blazor",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Create a Web API and utilize the corresponding repositories to develop the functional aspects of a shopping mall.",
+    url: "https://github.com/SeolheeKim7/ShoppingMallSolution",
   },
   {
-    title: "Web Development for Beginners",
+    title: "PHP Portfolio",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "I used PHP and MySQL to craft a portfolio of my work on various projects.",
+    url: "https://seolheeportfolio.000webhostapp.com/index.php",
   },
   {
-    title: "My Resume Site",
+    title: "Mobile messaging app Clone project",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Clone a messaging application with JavaScript, Css, Html",
+    url: "https://seolheekim-developer.github.io/kokoa-clone-2022/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Music Collection Application",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "MVC with SQLite database to create a music collection application.",
+    url: "https://mvcmusic2022seolhee.azurewebsites.net/",
   },
 ];
 
