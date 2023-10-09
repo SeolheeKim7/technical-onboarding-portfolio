@@ -31,6 +31,12 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
+    title: "CAA Inventory system",
+    description:
+      "The inventory application I built was chosen by CAA to use for their real-world stock system. as lead UX/UI designer, I created a beautiful user-friendly responsive web-based dashboard for a client.",
+    url: "https://caamarketingapp.azurewebsites.net/",
+  },
+  {
     title: "Shopping mall site with Blazor",
     description:
       "Create a Web API and utilize the corresponding repositories to develop the functional aspects of a shopping mall.",
@@ -46,7 +52,7 @@ const projectList = [
     title: "Mobile messaging app Clone project",
     description:
       "Clone a messaging application with JavaScript, Css, Html",
-    url: "https://seolheekim-developer.github.io/kokoa-clone-2022/",
+    url: "https://seolheekim7.github.io/kokoa-clone-2022/",
   },
   {
     title: "Music Collection Application",
@@ -54,20 +60,43 @@ const projectList = [
       "MVC with SQLite database to create a music collection application.",
     url: "https://mvcmusic2022seolhee.azurewebsites.net/",
   },
+  
+  {
+    title: "Emma's Inventory System Application",
+    description:
+      "Built a Inventory application with JavaScript, Css, Html",
+    url: "https://seolheekim7.github.io/Emma_s-small-engine/",
+  },
+  {
+    title: "Web Api Application with UWP",
+    description:
+      "Generated a Web API and utilize the corresponding repositories to develop the functional aspects of Football Management.",
+    url: "https://github.com/SeolheeKim7/FootballManagementSolution",
+  },
+  {
+    title: "To do list",
+    description:
+      "Made a to do list with React, JavaScript, Css, Html",
+    url: "https://jolly-gnome-b388c2.netlify.app/",
+  }
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn"  }}
-            alt={imageAltText}
-          />
-        </div>
+      <div style={{
+          backgroundColor: "white",
+          Width: "100%",
+          padding: "4rem",
+          margin: "3rem auto",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          alignItems: "flex-start",
+        }}>
+        
+        
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
@@ -75,6 +104,13 @@ const Portfolio = () => {
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
+              <div className="image-container">
+              <img
+            src={image}
+            style={{ height: "90%", width: "100%", objectFit: "cover"}}
+            alt={imageAltText}
+          />
+          </div>
             </div>
           ))}
         </div>

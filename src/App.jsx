@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import Education from "./Components/Education";
 
 import "./styles.css";
 
@@ -27,9 +28,9 @@ const siteProps = {
   name: "Seolhee Kim",
   title: "Web Developer | Data Analyst",
   email: "nanna7323@gmail.com",
-  gitHub: "https://github.com/SeolheeKim7",
+  gitHub: "SeolheeKim7",
   instagram: "",
-  linkedIn: "https://www.linkedin.com/in/seolheekim83/",
+  linkedIn: "seolheekim83",
   medium: "",
   twitter: "",
   youTube: "",
@@ -45,6 +46,7 @@ const App = () => {
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
       <Portfolio />
+      <Education />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
   );
