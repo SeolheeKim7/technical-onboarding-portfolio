@@ -19,9 +19,16 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/desk.png";
+import caa from "../images/caa.png";
+import shoppingmall from "../images/shoppingmall.png";
+import php from "../images/php-portfolio.png";
+import kakao from "../images/kakao_Project.png";
+import mvc from "../images/MVC_Project.png";
+import emmaProject from "../images/emmaProject.png";
+import uwp from "../images/uwp_Project.png";
+import todolist from "../images/todo-list.png";
 
-const imageAltText = "desktop with books and laptop";
+/*const imageAltText = "desktop with books and laptop";*/
 
 /**
  * Project list
@@ -35,57 +42,61 @@ const projectList = [
     description:
       "The inventory application I built was chosen by CAA to use for their real-world stock system. as lead UX/UI designer, I created a beautiful user-friendly responsive web-based dashboard for a client.",
     url: "https://caamarketingapp.azurewebsites.net/",
+    image: caa,
   },
   {
     title: "Shopping mall site with Blazor",
     description:
       "Create a Web API and utilize the corresponding repositories to develop the functional aspects of a shopping mall.",
     url: "https://github.com/SeolheeKim7/ShoppingMallSolution",
+    image: shoppingmall,
   },
   {
     title: "PHP Portfolio",
-    description:
-      "I used PHP and MySQL to craft a portfolio of my work on various projects.",
+    description: "I used PHP and MySQL to craft a portfolio of my work on various projects.",
     url: "https://seolheeportfolio.000webhostapp.com/index.php",
+    image: php,
   },
   {
     title: "Mobile messaging app Clone project",
-    description:
-      "Clone a messaging application with JavaScript, Css, Html",
+    description: "Clone a messaging application with JavaScript, Css, Html",
     url: "https://seolheekim7.github.io/kokoa-clone-2022/",
+    image: kakao,
   },
   {
     title: "Music Collection Application",
-    description:
-      "MVC with SQLite database to create a music collection application.",
+    description: "MVC with SQLite database to create a music collection application.",
     url: "https://mvcmusic2022seolhee.azurewebsites.net/",
+    image: mvc,
   },
-  
+
   {
     title: "Emma's Inventory System Application",
-    description:
-      "Built a Inventory application with JavaScript, Css, Html",
+    description: "Built a Inventory application with JavaScript, Css, Html",
     url: "https://seolheekim7.github.io/Emma_s-small-engine/",
+    image: emmaProject,
   },
   {
     title: "Web Api Application with UWP",
     description:
       "Generated a Web API and utilize the corresponding repositories to develop the functional aspects of Football Management.",
     url: "https://github.com/SeolheeKim7/FootballManagementSolution",
+    image: uwp,
   },
   {
     title: "To do list",
-    description:
-      "Made a to do list with React, JavaScript, Css, Html",
+    description: "Made a to do list with React, JavaScript, Css, Html",
     url: "https://jolly-gnome-b388c2.netlify.app/",
-  }
+    image: todolist,
+  },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{
+      <div
+        style={{
           backgroundColor: "white",
           Width: "100%",
           padding: "4rem",
@@ -94,9 +105,8 @@ const Portfolio = () => {
           flexWrap: "wrap",
           justifyContent: "space-between",
           alignItems: "flex-start",
-        }}>
-        
-        
+        }}
+      >
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
@@ -105,12 +115,12 @@ const Portfolio = () => {
               </a>
               <p className="small">{project.description}</p>
               <div className="image-container">
-              <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover"}}
-            alt={imageAltText}
-          />
-          </div>
+                <img
+                  src={project.image}
+                  style={{ height: "90%", width: "100%", objectFit: "cover", paddingTop: "1rem" }}
+                  alt={project.title}
+                />
+              </div>
             </div>
           ))}
         </div>
